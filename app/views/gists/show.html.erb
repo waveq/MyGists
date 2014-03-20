@@ -1,0 +1,25 @@
+
+
+
+
+
+<div class="panel panel-primary">
+  <div class="panel-heading"><h1>Język: <%= @gist.lang %></h1></div>
+</div>
+  
+<div class="panel panel-success">
+  <div class="panel-heading"><h3>Kod:</h3></div>
+  <div class="panel-body">
+<%= raw Pygments.highlight(@gist.snippet, lexer: @gist.lang) %>
+</div>
+<div class="panel-foot">
+<h3>Description:</h3>
+  <p><%= @gist.description %></p>
+</div>
+</div>
+<div class="alert alert-info">
+  <%= notice %>
+</div>
+
+<span class="btn btn-large btn-warning"><%= link_to 'Edit', edit_gist_path(@gist) %> </span>
+<span class="btn btn-large btn-primary"><%= link_to 'Back', gists_path %></span>

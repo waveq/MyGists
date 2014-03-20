@@ -1,0 +1,35 @@
+
+<div class="panel panel-primary">
+  <div class="panel-heading" ><h1>Twoje gisty:</h1></div>
+</div>
+<table class="table">
+  <thead>
+    <tr>
+      <th>Kod</th>
+      <th>Język</th>
+      <th>Opis</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+
+
+  <tbody>
+    <% @gists.each do |gist| %>
+      <tr>
+        <td><%= gist.snippet %></td>
+        <td><%= gist.lang %></td>
+        <td><%= gist.description %></td>
+
+        <td><span class="btn btn-large btn-success"><%= link_to 'Pokaż', gist %></span></td>
+        <td><span class="btn btn-large btn-warning"><%= link_to 'Edytuj', edit_gist_path(gist) %></span></td>
+        <td><span class="btn btn-large btn-danger"><%= link_to 'Usuń', gist, method: :delete, data: { confirm: 'Are you sure?' } %></span></td>
+        
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<span class="btn btn-large btn-primary"><%= link_to 'New Gist', new_gist_path %></span>

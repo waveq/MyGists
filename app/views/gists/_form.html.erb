@@ -1,0 +1,31 @@
+<%= form_for(@gist) do |f| %>
+  <% if @gist.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@gist.errors.count, "error") %> prohibited this gist from being saved:</h2>
+
+      <ul>
+      <% @gist.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Kod %><br>
+    <%= f.text_area :snippet, :size => "20x20" %>
+  </div>
+  <div class="field">
+    <%= f.label :Język %><br>
+    <%= f.text_field :lang %>
+  </div>
+  <div class="field">
+    <%= f.label :Opis %><br>
+    <%= f.text_field :description %>
+  </div>
+  <div class="actions">
+    <%= f.submit 'Gotowe', :class => 'btn btn-large btn-default' %>
+  </div>
+<% end %>
+
+
