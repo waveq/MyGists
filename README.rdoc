@@ -1,4 +1,4 @@
-MY GISTS
+== MY GISTS
 Aplikacja zaliczeniowa na przedmiot Architektura serwisów internetowych.
 
 == Aplikacja w sieci
