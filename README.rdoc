@@ -7,7 +7,14 @@ http://mygistsszymonrekawek.herokuapp.com/
 == Opis
 Zadaniem aplikacji jest przechowywanie kawałków kodu, języka w jakims kod został napisany oraz opisu.
 
-== Funkcjonalności
+== Funkcjonalności podstawowe
+* Dodawanie Gistów
+* Przeglądanie wszystkich gistów na stronie głównej
+* Przeglądanie pojedynczych gistów
+* Edycja gistów
+* Usuwanie gistów
+
+== Funkcjonalności dodatkowe
 * Kolorowanie kodu na stronie głównej oraz w showgists
 * Podział na strony(na stornie mieści się 5 gistów)
 * Ucinanie kodu na stronie głównej gdy jest zbyt długi (90 znaków)
