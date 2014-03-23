@@ -1,7 +1,9 @@
 
-<div class="panel panel-primary">
-  <div class="panel-heading" ><h1>Twoje gisty:</h1></div>
-</div>
+
+  <div class="navbar navbar-inverse"><div class="navbar-inner"><h1>Twoje gisty:</h1></div></div>
+
+
+<div class="center hero-unit">
 <table class="table">
   <thead>
     <tr>
@@ -19,7 +21,7 @@
   <tbody>
     <% @gists.each do |gist| %>
       <tr>
-        <td><%= gist.snippet %></td>
+        <td><%= raw Pygments.highlight(gist.snippet, lexer: gist.lang) %></td>
         <td><%= gist.lang %></td>
         <td><%= gist.description %></td>
 
@@ -31,5 +33,5 @@
     <% end %>
   </tbody>
 </table>
-
-<span class="btn btn-large btn-primary"><%= link_to 'New Gist', new_gist_path %></span>
+</div>
+<button class="btn btn-large btn-primary"><%= link_to 'New Gist', new_gist_path %></button>
