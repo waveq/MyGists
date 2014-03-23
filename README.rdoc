@@ -2,7 +2,7 @@
 Aplikacja zaliczeniowa na przedmiot Architektura serwisów internetowych.
 
 == Opis
-Zadaniem aplikacji jest przechowywanie kawałków kodu, języka w jakims kod został napisany oraz opisu.
+Zadaniem aplikacji jest przechowywanie kawałków kodu, języka w jakim kod został napisany oraz opisu.
 Wygląd aplikacji to w 90 procentach zasługa Bootstrapa.
 
 == Aplikacja w sieci
