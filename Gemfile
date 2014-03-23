@@ -52,8 +52,10 @@ end
 gem 'pygments.rb'
 gem 'redcarpet'
 gem 'quiet_assets'
+gem 'will_paginate'
 
 group :production do
    gem 'pg', '0.15.1'
    gem 'rails_12factor', '0.0.2'
 end
+

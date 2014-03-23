@@ -1,11 +1,18 @@
 class GistsController < ApplicationController
   before_action :set_gist, only: [:show, :edit, :update, :destroy]
 
+
+
+
   # GET /gists
   # GET /gists.json
   def index
-    @gists = Gist.all
+    @gists = Gist.paginate(page: params[:page], per_page: 5).order('created_at DESC')
   end
+
+  #def index
+  #  @gists = Gist.all
+  #end
 
   # GET /gists/1
   # GET /gists/1.json

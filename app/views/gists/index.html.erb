@@ -4,6 +4,8 @@
 
 
 <div class="center hero-unit">
+  <button class="btn btn-large btn-primary"><%= link_to 'Dodaj gista', new_gist_path %></button>
+<%= will_paginate %>
 <table class="table">
   <thead>
     <tr>
@@ -17,11 +19,11 @@
   </thead>
 
 
-
+<div class="table">
   <tbody>
     <% @gists.each do |gist| %>
       <tr>
-        <td><%= raw Pygments.highlight(gist.snippet, lexer: gist.lang) %></td>
+       <td><%= raw Pygments.highlight(gist.snippet.length > 30 ? gist.snippet[0,90] + "" : gist.snippet, lexer: gist.lang) %></td>
         <td><%= gist.lang %></td>
         <td><%= gist.description %></td>
 
@@ -32,6 +34,8 @@
       </tr>
     <% end %>
   </tbody>
-</table>
 </div>
-<button class="btn btn-large btn-primary"><%= link_to 'New Gist', new_gist_path %></button>
+</table>
+<%= will_paginate %>
+</div>
+

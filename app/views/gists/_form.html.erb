@@ -18,18 +18,26 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :Kod %><br>
-    <%= f.text_area :snippet, :size => "15x15" %>
-  </div>
-  <div class="field">
-    <%= f.label :Język %><br>
-    <%= f.select :lang, all_lexers %>
-  </div>
-  <div class="field">
-    <%= f.label :Opis %><br>
-    <%= f.text_field :description %>
-  </div>
+  <table>
+      <tr>
+   <td> <%= f.label :Kod %></td>
+    <td><%= f.label :Opis %></td>
+</tr>
+<tr>
+  <td><%= f.text_area :snippet, :class => "area" %></td>
+      <td><%= f.text_area :description, :class => "area" %></td>
+  </tr>
+  <tr>
+    <td><%= f.label :Język %></td>
+  </tr>
+    <tr><td><%= f.select :lang, all_lexers %></td>
+  </tr>
+</table>
+
+    
+    
+ 
+
   <div class="actions">
     <%= f.submit 'Gotowe', :class => 'btn btn-large btn-default' %>
   </div>
