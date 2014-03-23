@@ -1,11 +1,11 @@
 == MY GISTS
 Aplikacja zaliczeniowa na przedmiot Architektura serwisów internetowych.
 
-== Aplikacja w sieci
-http://mygistsszymonrekawek.herokuapp.com/
-
 == Opis
 Zadaniem aplikacji jest przechowywanie kawałków kodu, języka w jakims kod został napisany oraz opisu.
+
+== Aplikacja w sieci
+http://mygistsszymonrekawek.herokuapp.com/
 
 == Funkcjonalności podstawowe
 * Dodawanie Gistów
