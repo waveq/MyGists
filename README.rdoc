@@ -1,28 +1,30 @@
-== README
+== MY GISTS
+Aplikacja zaliczeniowa na przedmiot Architektura serwisów internetowych.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+== Opis
+Zadaniem aplikacji jest przechowywanie kawałków kodu, języka w jakim kod został napisany oraz opisu.
+Wygląd aplikacji to w 90 procentach zasługa Bootstrapa.
 
-Things you may want to cover:
+== Aplikacja w sieci
+http://mygistsszymonrekawek.herokuapp.com/
 
-* Ruby version
+== Funkcjonalności podstawowe
+* Dodawanie Gistów
+* Przeglądanie wszystkich gistów na stronie głównej
+* Przeglądanie pojedynczych gistów
+* Edycja gistów
+* Usuwanie gistów
 
-* System dependencies
+== Funkcjonalności dodatkowe
+* Kolorowanie kodu na stronie głównej oraz w showgists
+* Podział na strony(na stronie mieści się 5 gistów)
+* Ucinanie kodu na stronie głównej, gdy jest zbyt długi (90 znaków)
+* Wybór języka do naszego kodu jest bardzo prosty dzięki selectowi(nie musimy wpisywać nazwy języka, więc nie ma opcji pomyłki)
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+== Moje gemy
+* pygments.rb
+* redcarpet
+* quiet_assets
+* bootstrap
+* sass-rails
+* will_paginate
