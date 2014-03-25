@@ -4,7 +4,7 @@
 
 
 <div class="center hero-unit">
-  <span class="btn btn-large btn-primary"><%= link_to 'Dodaj gista', new_gist_path %></span>
+  <%= link_to 'Dodaj gista', new_gist_path, :class => "btn btn-large btn-primary"  %>
 <%= will_paginate %>
 <table class="table">
   <thead>
@@ -27,9 +27,9 @@
         <td><%= gist.lang %></td>
         <td><%= gist.description %></td>
 
-        <td><span class="btn btn-large btn-success"><%= link_to 'Pokaż', gist %></span></td>
-        <td><span class="btn btn-large btn-warning"><%= link_to 'Edytuj', edit_gist_path(gist) %></span></td>
-        <td><span class="btn btn-large btn-danger"><%= link_to 'Usuń', gist, method: :delete, data: { confirm: 'Are you sure?' } %></span></td>
+        <td><%= link_to 'Pokaż', gist, :class => "btn btn-large btn-success" %></td>
+        <td><%= link_to 'Edytuj', edit_gist_path(gist), :class => "btn btn-large btn-warning" %></td>
+        <td><%= link_to 'Usuń', gist, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-large btn-danger" %></td>
         
       </tr>
     <% end %>

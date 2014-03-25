@@ -20,8 +20,8 @@
   <%= notice %>
 </div>
 <hr />
-<span class="btn btn-large btn-warning"><%= link_to 'Edytuj', edit_gist_path(@gist) %> </span>
-<span class="btn btn-large btn-primary"><%= link_to 'Wróć', gists_path %></span>
+<%= link_to 'Edytuj', edit_gist_path(@gist), :class => "btn btn-large btn-warning" %> 
+<%= link_to 'Wróć', gists_path, :class => "btn btn-large btn-primary" %>
 </div>
 
 
