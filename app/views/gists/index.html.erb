@@ -23,8 +23,7 @@
   <tbody>
     <% @gists.each do |gist| %>
       <tr>
-       <!-- <td><%= raw Pygments.highlight(gist.snippet.length > 30 ? gist.snippet[0,90] + "" : gist.snippet, lexer: gist.lang) %></td> -->
-	<td> <%= gist.snippet %></td>
+ 
         <td><%= gist.lang %></td>
         <td><%= gist.description %></td>
 
