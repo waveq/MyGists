@@ -1,7 +1,22 @@
-<div class="navbar navbar-inverse">
-	<div class="navbar-inner"><h1>Edycja</h1></div>
+  <div class="navbar navbar-inverse">
+    <div class="navbar-inner">
+     <nav>
+      <ul class="nav pull-left">
+        <li>
+          <a href="/gists">MyGists</a>
+        </li>
+        <li>
+          <a href="http://www.github.com/waveq/MyGists">Projekt na githubie</a>
+        </li>
+        <li>
+          <a href="/gists/new">Quick add</a>
+        </li>
+    </nav>
+  
+  </div>
 </div>
 <div class="center hero-unit">
+	<h1>Edycja</h1>
 <%= render 'form' %>
 <hr />
 <%= link_to 'Pokaż', @gist, :class =>"btn btn-large btn-success" %>

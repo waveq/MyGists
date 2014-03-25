@@ -1,16 +1,29 @@
 
+  <div class="navbar navbar-inverse">
+    <div class="navbar-inner">
+        <nav>
+      <ul class="nav pull-left">
+        <li>
+          <a href="/gists">MyGists</a>
+        </li>
+          <li>
+          <a href="http://www.github.com/waveq/MyGists">Projekt na githubie</a>
+        </li>
+         </li>
+          <li>
+          <a href="/gists/new">Quick add</a>
+        </li>
 
-
-
-
-<div class="navbar navbar-inverse"><div class="navbar-inner"><h1>Język: <%= @gist.lang %></h1></div></div>
+    </nav>
   
+  </div>
+
+</div>
 <div class="center hero-unit">
-<div class="panel panel-success">
+	<h1>Język: <%= @gist.lang %>
   <div class="panel-heading"><h3>Kod:</h3></div>
   <div class="panel-body">
 <%= raw Pygments.highlight(@gist.snippet, lexer: @gist.lang) %>
-</div>
 <div class="panel-foot">
 <h3>Description:</h3>
   <p><%= @gist.description %></p>
