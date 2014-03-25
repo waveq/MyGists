@@ -29,7 +29,7 @@ a {
   }
 }*/
 
-a { color: black; }
+a:link{ color: black; }
 a:visited { color: black; }
 a:hover { color: white; 
 text-decoration: none}
