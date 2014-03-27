@@ -1,5 +1,5 @@
 
-
+<div class="all" >
   <div class="navbar navbar-inverse">
     <div class="navbar-inner">
       <nav>
@@ -21,39 +21,33 @@
 
 <div class="center hero-unit">
 <%= will_paginate %>
-<h1>Twoje gisty:</h1>
-<table class="table">
-  <thead>
-    <tr>
-      <th>Kod</th>
-      <th>Język</th>
-      <th>Opis</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
+<h1>Twoje gisty:</h1><br />
 
-
-<div class="table">
-  <tbody>
     <% @gists.each do |gist| %>
-      <tr>
+<div class="gistBox">
 
-       <td><%= raw Pygments.highlight(gist.snippet.length > 30 ? gist.snippet[0,90] + "" : gist.snippet, lexer: gist.lang) %></td> 
-        <td><%= gist.lang %></td>
-        <td><%= gist.description %></td>
 
-        <td><%= link_to 'Pokaż', gist, :class => "btn btn-large btn-success" %></td>
-        <td><%= link_to 'Edytuj', edit_gist_path(gist), :class => "btn btn-large btn-warning" %></td>
-        <td><%= link_to 'Usuń', gist, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-large btn-danger" %></td>
-        
-      </tr>
+  <div class="codeBox">
+    <%= raw Pygments.highlight(gist.snippet.length > 30 ? gist.snippet[0,90] + "" : gist.snippet, lexer: gist.lang) %>
+  </div>
+  <div class="langBox">
+          <%= gist.lang %>
+  </div>
+  <div class="descriptionBox">
+          <%= gist.description %>
+  </div>
+  <div class="buttonBox">
+          <%= link_to 'Pokaż', gist, :class => "btn  btn-success" %>
+          <%= link_to 'Edytuj', edit_gist_path(gist), :class => "btn btn-warning" %>
+         <%= link_to 'Usuń', gist, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-danger" %>
+  </div>
+</div> <!-- gistBox -->
     <% end %>
-  </tbody>
-</div>
-</table>
+
+
+</div> <!-- gitstsBox -->
 <%= link_to 'Dodaj', new_gist_path, :class => "btn btn-large btn-default"  %>
 <%= will_paginate %>
 </div>
 
+</div> <!-- all -->

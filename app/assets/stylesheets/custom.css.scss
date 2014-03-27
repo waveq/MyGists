@@ -21,3 +21,85 @@ width: 600px;
 height: 300px;
 }
 
+/*
+
+*/
+
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+.gistsBox {
+	margin-top: 20px;
+	width:100%;
+	height:100%;
+}
+
+@media screen and (min-width: 939px) {
+	.gistBox {
+		display:flex;
+		display: -webkit-flex;
+		width:100%;
+		height:100%;
+		margin-bottom: 10px;
+		padding-bottom: 10px;
+		border-bottom-style: dotted;
+		border-bottom-width: 1px;
+		border-bottom-color: grey; 
+	}
+
+	.codeBox {
+		width: 400px;
+		background-color: #aaa;
+
+	}
+
+	.langBox {
+		width: 100px;
+		text-align: center;
+	}
+
+	.descriptionBox {
+		width: 150px;
+		text-align: center;
+	}
+
+	.buttonBox {
+		margin-bottom: 20px;
+	}
+
+	.hero-unit {
+		padding-right: 0px;
+	}
+
+}
+
+@media screen and (max-width: 938px) {
+	.gistBox{
+		margin-bottom: 10px;
+		padding-bottom: 10px;
+		border-bottom-style: dotted;
+		border-bottom-width: 1px;
+		border-bottom-color: grey; 
+
+	}
+.codeBox {
+		width: 400px;
+		background-color: #aaa;
+		align-self: center;
+	}
+
+	.langBox {
+		width: 100px;
+	}
+
+	.descriptionBox {
+		width: 150px;
+	}
+
+	.hero-unit {
+		padding-left: 10px;
+		padding-right: 0px;
+	}
+}
