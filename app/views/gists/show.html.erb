@@ -20,17 +20,21 @@
 
 </div>
 <div class="center hero-unit">
+  <div class="showBox">
 	<h1>Język: <%= @gist.lang %>
   <div class="panel-heading"><h3>Kod:</h3></div>
   <div class="panel-body">
 <%= raw Pygments.highlight(@gist.snippet, lexer: @gist.lang) %>
 <div class="panel-foot">
 <h3>Description:</h3>
+<div class="showDescriptionBox" >
   <p><%= @gist.description %></p>
+</div>
 </div>
 </div>
 <div class="alert alert-info">
   <%= notice %>
+</div>
 </div>
 <hr />
 <%= link_to 'Edytuj', edit_gist_path(@gist), :class => "btn btn-large btn-warning" %> 

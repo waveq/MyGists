@@ -13,20 +13,27 @@ font-size: 23px;
 }
 
 p {
-font-size: 23px;
+font-size: 18px;
 }
 
-.area {
-width: 600px;
-height: 300px;
+.showDescriptionBox {
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+	border-radius: 10px;
+	background-color: white;
+	padding: 5px 5px 0px 5px;
+	margin-bottom: 10px;
 }
+
+
 
 /*
 
 */
 
 html, body {
-	width: 100%;
+	width: auto;
 	height: 100%;
 }
 
@@ -35,6 +42,12 @@ html, body {
 	width:100%;
 	height:100%;
 }
+
+.hero-unit h1 {
+	font-size: 25px;
+}
+
+
 
 @media screen and (min-width: 1005px) {
 	.gistBox {
@@ -87,10 +100,20 @@ html, body {
 		padding-right: 0px;
 	}
 
+	.area {
+		width: 600px;
+		height: 300px;
+	}
+
+	.showBox {
+	width: 600px;
+}
+
 }
 
 @media screen and (max-width: 1004px) {
 	.gistBox{
+		width: 400px;
 		margin-bottom: 10px;
 		padding-bottom: 10px;
 		border-bottom-style: solid;
@@ -130,4 +153,13 @@ html, body {
 		padding-left: 10px;
 		padding-right: 0px;
 	}
+
+	.area {
+		width: 400px;
+		height: 300px;
+	}
+
+	.showBox {
+	width: 400px;
+}
 }
