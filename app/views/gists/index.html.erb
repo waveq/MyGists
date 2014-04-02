@@ -41,6 +41,16 @@
 <div class="gistBox">
 
 
+  <div class="codeBox">
+    <%= raw Pygments.highlight(gist.snippet.length > 30 ? gist.snippet[0,90] + "" : gist.snippet, lexer: gist.lang) %>
+  </div>
+  <div class="langBox">
+          <%= gist.lang %>
+  </div>
+  <div class="descriptionBox">
+          <%= gist.description %>
+  </div>
+
 
   <div class="buttonBox">
           <%= link_to 'Pokaż', gist, :class => "btn  btn-success" %>
