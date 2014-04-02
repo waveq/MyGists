@@ -17,6 +17,7 @@ http://mygistsszymonrekawek.herokuapp.com/
 * Ucinanie kodu na stronie głównej, gdy jest zbyt długi (90 znaków)
 * Wybór języka do naszego kodu jest bardzo prosty dzięki selectowi(nie musimy wpisywać nazwy języka, więc nie ma opcji pomyłki)
 * Wyszukiwanie po języku(wyszukuje wszystkie gisty napisane w danym języku)
+* Responsywność - najmniejsza obsługiwana szerokość ekranu to 430px
 == Moje gemy
 * pygments.rb
 * redcarpet
