@@ -29,39 +29,20 @@
   </div>
 </div>
 
+</div>
+     
+<br><br>
+
+ 
 
 <div class="center hero-unit">
-        
-
-
-<%= will_paginate %>
-<h1>Twoje gisty:</h1><br />
-
-    <% @gists.each do |gist| %>
-<div class="gistBox">
-
-
-  <div class="codeBox">
-    <%= raw Pygments.highlight(gist.snippet.length > 30 ? gist.snippet[0,90] + "" : gist.snippet, lexer: gist.lang) %>
+  <%= link_to 'Dodaj', new_gist_path, :class => "btn btn-large btn-prime"  %>
+  <div id="gists-list">
+       <%= render @gists %>
   </div>
-  <div class="langBox">
-          <%= gist.lang %>
-  </div>
-  <div class="descriptionBox">
-          <%= gist.description %>
-  </div>
+</div>
+ 
 
-
-  <div class="buttonBox">
-          <%= link_to 'Pokaż', gist, :class => "btn  btn-success" %>
-          <%= link_to 'Edytuj', edit_gist_path(gist), :class => "btn btn-warning" %>
-         <%= link_to 'Usuń', gist, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-danger" %>
-  </div>
-</div> <!-- gistBox -->
-    <% end %>
-
-<%= link_to 'Dodaj', new_gist_path, :class => "btn btn-large btn-default"  %>
-</div> <!-- gitstsBox -->
-
-
-</div> <!-- all -->
+<div id="infinite-scrolling" disabled="true">
+    <%= will_paginate %>
+</div>

@@ -1,10 +1,8 @@
-var delimiter =
-$('<div class="page-delimiter"  data-page="<%= params[:page] %>"></div>');
-$('#my-gists').append(delimiter);
-$('#my-gists').append('<%= j render @gists %>');
-$('.pagination').replaceWith('<%= j will_paginate @gists %>');
-preparePagination(delimiter);
+$('#gists-list').append('<%= j render @gists %>');
 
-<% unless @gists.next_page %>
-$('#infinite-scrolling .pagination').remove();
+<% if @gists.next_page %>
+  $('.pagination').replaceWith('<%= j will_paginate @gists %>');
+<% else %>
+  $(window).off('scroll');
+  $('.pagination').remove();
 <% end %>
