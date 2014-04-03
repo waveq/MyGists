@@ -12,7 +12,7 @@ http://mygistsszymonrekawek.herokuapp.com/
 
 == Funkcjonalności dodatkowe
 * Kolorowanie kodu na stronie głównej oraz w showgists
-* Podział na strony(na stronie mieści się 5 gistów)
+* Infinity scrolling - Na strnie doładowują się gisty po zjechaniu na sam dół.
 * Ucinanie kodu na stronie głównej, gdy jest zbyt długi (90 znaków)
 * Wybór języka do naszego kodu jest bardzo prosty dzięki selectowi(nie musimy wpisywać nazwy języka, więc nie ma opcji pomyłki)
 * Wyszukiwanie po języku(wyszukuje wszystkie gisty napisane w danym języku)
