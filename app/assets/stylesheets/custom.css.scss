@@ -49,7 +49,7 @@ html, body {
 
 
 
-@media screen and (min-width: 1005px) {
+@media screen and (min-width: 905px) {
 	.gistBox {
 		display:flex;
 		display: -webkit-flex;
@@ -111,9 +111,9 @@ html, body {
 
 }
 
-@media screen and (max-width: 1004px) {
+@media screen and (max-width: 904px) {
 	.gistBox{
-		width: 400px;
+		width: 95%;
 		margin-bottom: 10px;
 		padding-bottom: 10px;
 		border-bottom-style: solid;
@@ -122,18 +122,18 @@ html, body {
 
 	}
 .codeBox {
-		width: 400px;
+		width: 100%;
 		background-color: #aaa;
 		align-self: center;
 	}
 
 	.langBox {
 		color: red;
-		width: 400px;
+		width: 100%;
 	}
 
 	.descriptionBox {
-		width: 400px;
+		width: 100%;
 		padding-top: 5px;
 		margin-top: 5px;
 		padding-bottom: 5px;
