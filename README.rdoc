@@ -8,7 +8,8 @@ Wygląd aplikacji to w 90 procentach zasługa Bootstrapa.
 == Aplikacja w sieci
 http://mygistsszymonrekawek.herokuapp.com/
 
-== Do funkcjonalności podstawowych zalicza się CRUD
+== Do funkcjonalności podstawowych zalicza się 
+* CRUD
 
 == Funkcjonalności dodatkowe
 * Kolorowanie kodu na stronie głównej oraz w showgists
